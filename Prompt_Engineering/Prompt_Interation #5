@@ -1,0 +1,50 @@
+Prompt:
+    You are a flashcard creator that creates flashcard based on fact and text input.
+    You will need to create these flashcard with the intention to test out all the information in the input, ensuring deep understanding of the material.
+    You will create flashcards by following the instructions listed below:
+    1. Conceptualize the input text into chunks.
+    2. Create questions for each concept from step 1. and keep them simple to read. Make sure every concept have been mentioned in the output.
+    3. Format the output as a whole JSON file with the following keys:
+    flashcard_index
+    flashcard_topic
+    flashcard_question
+    flashcard_answer
+    flashcard_keyword
+
+    Keep the keywords count equal or less than 5.
+
+    Only output the whole JSON file and nothing else, no dialogue.
+
+Output:
+ {
+"flashcards": [
+{
+"flashcard_index": 1,
+"flashcard_topic": "Eye Movement and Muscles",
+"flashcard_question": "Which six muscles control eye movement?",
+"flashcard_answer": "Superior oblique, Inferior oblique, Superior rectus, Inferior rectus, Medial rectus, Lateral rectus.",
+"flashcard_keyword": ["muscles", "eye movement"]
+},
+{
+"flashcard_index": 2,
+"flashcard_topic": "Eye Movement and Stability",
+"flashcard_question": "How does eye movement help maintain a stable image on the retina?",
+"flashcard_answer": "The eyes can move independently of objects or head movements, keeping the image on the fovea centralis stable. This improves fine detail discrimination, especially in low vision conditions.",
+"flashcard_keyword": ["eye movement", "stability"]
+},
+{
+"flashcard_index": 3,
+"flashcard_topic": "Eye Muscles and Accommodation",
+"flashcard_question": "What role do eye muscles play in visual accommodation?",
+"flashcard_answer": "Eye muscles not only control eye movement but also participate in the accommodation process. This involves changing the curvature of the lens to adjust focus based on distance changes.",
+"flashcard_keyword": ["eye muscles", "accommodation"]
+},
+{
+"flashcard_index": 4,
+"flashcard_topic": "Eye Muscles and Focus Adjustment",
+"flashcard_question": "How do eye muscles adjust focus when looking at objects at different distances?",
+"flashcard_answer": "The ciliary muscle and the pupil sphincter contract to increase the eye's power of accommodation, allowing images to be focused clearly on the fovea centralis.",
+"flashcard_keyword": ["eye muscles", "focus adjustment"]
+}
+]
+}

@@ -1,0 +1,46 @@
+Prompt:
+You are a flashcard creator that creates flashcard based on fact and text input. You will create flashcards by following the instructions below:
+    1. Conceptualize the input text into chunks.
+    2. Create questions for each concept from step 1. and keep them simple to read. Make sure every concept have been mentioned in the output.
+    3. Format the output as a whole JSON file with the following keys:
+    flashcard_index
+    flashcard_topic
+    flashcard_question
+    flashcard_answer
+    flashcard_keyword
+
+    Only output the whole JSON file and nothing else, no dialogue.
+
+Output:
+ {
+"flashcards": [
+{
+"flashcard_index": 1,
+"flashcard_topic": "Eye Movement and Muscles",
+"flashcard_question": "Which six muscles control eye movement?",
+"flashcard_answer": "The superior oblique, inferior oblique, superior rectus, inferior rectus, medial rectus, and lateral rectus muscles control eye movement.",
+"flashcard_keyword": "eye muscles, superior oblique, inferior oblique, superior rectus, inferior rectus, medial rectus, lateral rectus"
+},
+{
+"flashcard_index": 2,
+"flashcard_topic": "Eye Movement and Stability",
+"flashcard_question": "How does eye movement help maintain a stable image on the retina?",
+"flashcard_answer": "During movement of objects or the head, the eyes can move independently to keep the image on the fovea centralis steady. This helps improve fine detail discrimination, especially in low vision conditions.",
+"flashcard_keyword": "eye movement, stability, fovea centralis, retina"
+},
+{
+"flashcard_index": 3,
+"flashcard_topic": "Eye Muscles and Accommodation",
+"flashcard_question": "What role do eye muscles play in the accommodation process?",
+"flashcard_answer": "Eye muscles not only control eye movement but also participate in the accommodation process. This involves changing the curvature of the lens to adjust focus based on distance variations.",
+"flashcard_keyword": "eye muscles, accommodation, lens, focus, distance"
+},
+{
+"flashcard_index": 4,
+"flashcard_topic": "Eye Muscles and Visual Function",
+"flashcard_question": "What are some other functions of eye muscles in visual processes?",
+"flashcard_answer": "Eye muscles play a role in maintaining clear and stable vision as well as accommodating for near objects. They help adjust the lens's curvature to focus on distant or nearby objects.",
+"flashcard_keyword": "eye muscles, visual processes, clear vision, accommodation, distant objects, nearby objects"
+}
+]
+}
