@@ -44,12 +44,16 @@ output_parser = JsonOutputParser(pydantic_object=flashcards)
 ## PDF extraction
 import fitz
 
-doc = fitz.open("test.pdf")
+path = "cell injury(2024).pdf"
+
+doc = fitz.open(path)
 textbook = []
 
 for page in doc:
     text = page.get_text()
     textbook.append(text)
+print("Document path: " + path)
+print("There are %d pages in the doc given." % (len(textbook)))
 
 ## Make the chain
 chain = flashcardgen | llm | output_parser
@@ -57,12 +61,12 @@ deck = []
 
 ## Chunk the information and run them thru the chain for flashcard generation
 for index in range(len(textbook)):
-    print("page %d: started" % (index + 1))
+    print("Page %d: started" % (index + 1))
     try:
         deck.append(chain.invoke({"input": textbook[index]})["flashcards"])
-        print("page %d: complete" % (index + 1))
+        print(":complete")
     except:
-        print("page %d: error" % (index + 1))
+        print(":error")
 
 ## Pandas dataframe for output to csv for anki acception
 
@@ -73,6 +77,9 @@ for sec in deck:
     for c in sec:
         reform_deck.append(c)
 
-deck_df = pd.DataFrame(data=reform_deck, columns=['flashcard_index', 'flashcard_topic', 'flashcard_question', 'flashcard_answer', 'flashcard_keyword'])
+deck_df = pd.DataFrame(data=reform_deck, columns=['flashcard_index', 'flashcard_question', 'flashcard_answer', 'flashcard_keyword', 'flashcard_topic'])
+print(deck_df)
+deck_df.to_csv("raw_output.csv", index=False)
+deck_df = deck_df.drop(["flashcard_index"], axis=1)
 print(deck_df)
 deck_df.to_csv("output.csv", index=False)
