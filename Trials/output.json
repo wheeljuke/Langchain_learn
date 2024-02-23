@@ -1,0 +1,33 @@
+[
+  {
+    "flashcard_index": 1,
+    "flashcard_topic": "Eye Movement",
+    "flashcard_question": "Which six muscles control eye movement?",
+    "flashcard_answer": "Superior oblique, Inferior oblique, Superior rectus, Inferior rectus, Medial rectus, and Lateral rectus.",
+    "flashcard_keyword": "eye muscles"
+  },
+  {
+    "flashcard_index": 2,
+    "flashcard_topic": "Eye Movement",
+    "flashcard_question": "What allows the image on the retina to remain stable during head or body movement?",
+    "flashcard_answer": "The eyes can move independently of the object or head, keeping the image in the fovea centralis (yellow spot) stable.",
+    "flashcard_keyword": "eye stability"
+  },
+  {
+    "flashcard_index": 3,
+    "flashcard_topic": "Eye Function",
+    "flashcard_question": "What is accommodation and how does it work?",
+    "flashcard_answer": "Accommodation is the process by which the eyes change their crystalline lens curvature to adjust focus based on distance. The ciliary muscle and the muscles of the iris work together to increase or decrease the eye's power of accommodation.",
+    "flashcard_keyword": "accommodation, eye focus"
+  },
+  {
+    "flashcard_index": 4,
+    "flashcard_topic": "Eye Function",
+    "flashcard_question": "What happens when we look at a nearby object?",
+    "flashcard_answer": "The eyes converge and the ciliary muscle contracts to increase the eye's power of accommodation. This allows the image to be focused on the fovea centralis.",
+    "flashcard_keyword": "near vision"
+  }
+]
+
+
+

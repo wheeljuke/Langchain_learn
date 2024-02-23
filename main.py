@@ -44,7 +44,7 @@ output_parser = JsonOutputParser(pydantic_object=flashcards)
 ## PDF extraction
 import fitz
 
-path = "cell injury(2024).pdf"
+path = "PDFs/Antiseptics 2024.pdf"
 
 doc = fitz.open(path)
 textbook = []
@@ -68,14 +68,23 @@ for index in range(len(textbook)):
     except:
         print(":error")
 
+## Output the raw data first, to save any time lost through json to csv conversion error
+with open("raw_output.txt", "w") as f:
+    for card in deck:
+        f.write(str(card))
+
+
+
 ## Pandas dataframe for output to csv for anki acception
-
 import pandas as pd
-
-reform_deck = []
-for sec in deck:
-    for c in sec:
-        reform_deck.append(c)
+try:
+    reform_deck = []
+    for sec in deck:
+        for c in sec:
+            reform_deck.append(c)
+    print("output was a list")
+except:
+    print("output was a json")
 
 deck_df = pd.DataFrame(data=reform_deck, columns=['flashcard_index', 'flashcard_question', 'flashcard_answer', 'flashcard_keyword', 'flashcard_topic'])
 print(deck_df)
