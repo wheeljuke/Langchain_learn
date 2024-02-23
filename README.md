@@ -12,7 +12,8 @@ MBP 2021 M1 Pro 16G Ram
 Python 3.13
 
 ## Future work
-1. Create a card format in Anki to accept this ["flashcard_index", "flashcard_topic", "flashcard_question", "flashcard_answer", "flashcard_keyword"] format.
-1-1. Index should be ingnored, the others should be filled into their respective fields.
+~~1. Create a card format in Anki to accept this ["flashcard_index", "flashcard_topic", "flashcard_question", "flashcard_answer", "flashcard_keyword"] format.~~
+~~1-1. Index should be ingnored, the others should be filled into their respective fields.~~
 2. Clozer for llm unsupervised traning could be a good option for flashcard generation.
 3. Possibly restructure chunking by pages into a vector database.
+4. Improve the prompt even more to reduce format conflict with JSON, and increase question specificity to remove odd questions.
