@@ -12,10 +12,10 @@ MBP 2021 M1 Pro 16G Ram
 Python 3.13
 
 ## Road Map
-~~1. Create a card format in Anki to accept this ["flashcard_index", "flashcard_topic", "flashcard_question", "flashcard_answer", "flashcard_keyword"] format.~~
-~~1-1. Index should be ingnored, the others should be filled into their respective fields.~~
-2. Clozer for llm unsupervised traning could be a good option for flashcard generation.
-3. Possibly restructure chunking by pages into a vector database.
-~~4. Improve the prompt even more to reduce format conflict with JSON, and increase question specificity to remove odd questions.~~
-5. Add audio recording and speech to text capabilities, for further highlight specificity in classes such as LMarch
-6. Add UI for pdf import and page selection
+1. ~~Create a card format in Anki to accept this ["flashcard_index", "flashcard_topic", "flashcard_question", "flashcard_answer", "flashcard_keyword"] format.~~
+2. ~~Index should be ingnored, the others should be filled into their respective fields.~~
+3. Clozer for llm unsupervised traning could be a good option for flashcard generation.
+4.Possibly restructure chunking by pages into a vector database.
+5. ~~Improve the prompt even more to reduce format conflict with JSON, and increase question specificity to remove odd questions.~~
+6. Add audio recording and speech to text capabilities, for further highlight specificity in classes such as LMarch
+7. Add UI for pdf import and page selection
