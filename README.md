@@ -19,3 +19,5 @@ Python 3.13
 5. ~~Improve the prompt even more to reduce format conflict with JSON, and increase question specificity to remove odd questions.~~
 6. Add audio recording and speech to text capabilities, for further highlight specificity in classes such as LMarch
 7. Add UI for pdf import and page selection
+8. Image recognition
+9. Powercam(.ecm) recognition
